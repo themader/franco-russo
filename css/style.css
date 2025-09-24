@@ -1,0 +1,233 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #002147;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #f5f5f5;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-links{
+    padding-top: 10px;
+}
+
+.nav-links a{
+    padding-top: 5px;
+    background-color: #002147;
+    padding: 10px;
+    border: #f5f5f5 solid 1px;
+    border-radius: 20%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-links a:hover {
+    background-color: #f5f5f5;
+    color: #002147;
+    border: #002147 solid 1px;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-container div {
+    width: 45%;
+    background-color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    color: #333;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.skills-container div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#education ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#education li {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#education li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+#education a {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #002147;
+    color: white;
+}
+
+main {
+    background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    color: white; /* Para mejorar el contraste del texto */
+}
+
+main section {
+     background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-pic:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+
+#contact .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+#contact .contact-item img {
+    width: 24px;
+    height: 24px;
+}
+
+#contact .contact-item span,
+#contact .contact-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.menu-toggle {
+    display: none;
+    background-color: #002147;
+    color: white;
+    border: none;
+    font-size: 28px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-container div {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* 📱 NAV responsive */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .nav-links a {
+        width: 80%;
+        text-align: center;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+
+
+    .menu-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        display: none;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .menu-toggle{
+        border: solid 2px white;
+    }
+    
+}
+    
